@@ -1,0 +1,90 @@
+// colors
+// $light-grey: #bbb891;
+$dark-grey: #b3b3bb3;
+$violet-light: #c297b8;
+
+// palete 1
+$snow: #fcf7f8;
+$light-grey: #ced3dc;
+$yonder: #aba9c3;
+$blue: #275dad;
+
+//font-colors
+$ff-main: #5b616a;
+
+
+
+// typography
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	// background-color: dodgerblue;
+	border: 2px solid dodgerblue;
+	border-radius: 10px;
+	color: $ff-main;
+	width: 90%;
+	margin: 20px auto;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+
+	.title {
+	display: inline-block;
+	padding: 10px;
+	// color: #ff3;
+	text-transform: uppercase;
+	position: relative;
+
+	&::after {
+		top: 3rem;
+		left: 0;
+		display: block;
+		content: '';
+		height: 2px;
+		background-color: #333;
+		position: absolute;
+		}
+	}
+}
+
+.main {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+
+	input {
+		width: 200px;
+		height: 40px;
+		border: 1px solid #777;
+		border-radius: 5px;
+
+	}
+
+	button {
+		font-weight: bold;
+		padding: 5px 10px;
+		color: $ff-main;
+		text-transform: uppercase;
+		background: transparent;
+		width: 100px;
+		height: 40px;
+		border: 1px solid $dark-grey;
+		border-radius: 5px;
+
+		&:hover {
+			box-shadow: 1px 2px grey;
+		}
+	}
+
+}
+
+h2 {
+	color: dodgerblue;
+}
